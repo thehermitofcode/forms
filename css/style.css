@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+:root {
+  --container-border-radius: 15px;
+  --button-border-radius: 5px;
+  --primary-color: #3c7a89;
+  --secondary-color: #eeeeee;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #000000;
+  --box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 22%);
+  --button-padding: 16px 28px;
+  --button-font-size: 12px;
+  --letter-spacing: 0.5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.welcome-container {
+  width: 300px;
+  height: 430px;
+  margin: 7rem auto;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--container-border-radius);
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.5em;
+  align-content: center;
+}
+
+.welcome-header h1 {
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: var(--letter-spacing);
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0.5rem;
+}
+
+.create-account button {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  border: none;
+  outline: none;
+  width: 90%;
+  height: 32px;
+  font-size: 12px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: bold;
+  border-radius: var(--button-border-radius);
+}
+
+.login button {
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  border: none;
+  outline: none;
+  width: 90%;
+  height: 32px;
+  font-size: 12px;
+  letter-spacing: var(--letter-spacing);
+  font-weight: bold;
+  border-radius: var(--button-border-radius);
+}

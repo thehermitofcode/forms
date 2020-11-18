@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms: Login</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <script src="https://kit.fontawesome.com/7016607b5a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="welcome-container">
+      <div class="container-padding">
+        <div class="form-header">
+          <div class="header">
+            <h1>Login</h1>
+          </div>
+        </div>
+
+        <div class="third-party-auth">
+          <div class="google-sign-up">
+            <button><i class="fab fa-google"></i> Sign in with Google</button>
+          </div>
+          <div class="github-sign-up">
+            <button><i class="fab fa-github"></i></button>
+          </div>
+          <div class="slack-sign-up">
+            <button><i class="fab fa-slack"></i></button>
+          </div>
+        </div>
+
+        <div class="alt-block">
+          <div class="hr"><hr /></div>
+          <div class="or"><p>Or</p></div>
+          <div class="hr"><hr /></div>
+        </div>
+        <form action="dashboard.html">
+          <div class="form-inputs">
+            <div class="form-input-block">
+              <div class="label"><label for="email">Email Address</label></div>
+              <div class="input">
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="example@mail.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-input-block">
+              <div class="label"><label for="password">Password</label></div>
+              <div class="input">
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="8+ characters"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="create-account-btn">
+            <input type="submit" value="Login" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="already-a-member">
+      <p>
+        Not registered?
+        <span class="already-a-member-login"
+          ><a class="span" href="create-account.html"
+            >Create an account</a
+          ></span
+        >
+      </p>
+    </div>
+  </body>
+</html>
